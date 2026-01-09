@@ -6,9 +6,9 @@ require('dotenv').config();
 // Import routes
 const authRoutes = require('./routes/auth.routes');
 const appointmentRoutes = require('./routes/appointment.route');
-const slotRoutes = require('./routes/slotRoutes');
+const slotRoutes = require('./routes/slot.route');  // CORRECT
 const userRoutes = require('./routes/userRoutes');
-
+const dashboardRoutes = require('./routes/dashboard.route');
 // Import middleware
 const errorHandler = require('./middleware/errorHandler');
 

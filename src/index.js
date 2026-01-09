@@ -72,4 +72,4 @@ app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📡 API Base URL: http://localhost:${PORT}/api`);
   console.log(`🔗 Health check: http://localhost:${PORT}/api/health`);
-});
+});# Redeploy trigger Sat, Jan 10, 2026  2:17:04 AM

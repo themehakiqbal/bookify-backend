@@ -1,5 +1,3 @@
-# Create clean index.js
-cat > src/index.js << 'EOF'
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -25,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 const connectDB = async () => {
   try {
     const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookify';
-    console.log('Connecting to MongoDB...', mongoURI.substring(0, 50) + '...');
+    console.log('Connecting to MongoDB...');
     
     await mongoose.connect(mongoURI, {
       useNewUrlParser: true,
@@ -137,4 +135,3 @@ startServer().catch(err => {
   console.error('Failed to start server:', err);
   process.exit(1);
 });
-EOF
